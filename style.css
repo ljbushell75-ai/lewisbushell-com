@@ -24,6 +24,10 @@ p {
     line-height: 1.6;
 }
 
+.words {
+    display: flex;
+    gap: 200px;
+}
 .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
