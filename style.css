@@ -43,7 +43,10 @@ h1{
     margin-bottom:100px;
 }
 
-.words a{
+.words a,
+.words a:visited,
+.words a:hover,
+.words a:active{
     color:#111;
     text-decoration:none;
     font-size:18px;
@@ -63,25 +66,19 @@ h1{
 }
 
 .project-preview img{
-
     width:100%;
     display:block;
-
     transition:opacity .3s ease;
 }
 
 .project-preview img:hover{
-
     opacity:.8;
-
 }
 
 .project-preview h2{
-
     font-size:24px;
     font-weight:300;
     margin-top:20px;
-
 }
 
 
@@ -89,37 +86,27 @@ h1{
 
 @media(max-width:900px){
 
-header{
+    header{
+        left:20px;
+        top:20px;
+    }
 
-left:20px;
-top:20px;
+    .container{
+        padding:120px 20px 40px;
+    }
 
-}
+    .words{
+        gap:30px;
+        flex-wrap:wrap;
+        margin-bottom:60px;
+    }
 
-.container{
+    h1{
+        font-size:24px;
+    }
 
-padding:120px 20px 40px;
-
-}
-
-.words{
-
-gap:30px;
-flex-wrap:wrap;
-margin-bottom:60px;
-
-}
-
-h1{
-
-font-size:24px;
-
-}
-
-.project-preview{
-
-margin-bottom:80px;
-
-}
+    .project-preview{
+        margin-bottom:80px;
+    }
 
 }
