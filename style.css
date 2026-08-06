@@ -1,8 +1,11 @@
+```css
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap');
+
 
 *{
     box-sizing:border-box;
 }
+
 
 body{
     margin:0;
@@ -10,6 +13,7 @@ body{
     color:#111;
     font-family:"Manrope",sans-serif;
 }
+
 
 .container{
     max-width:1600px;
@@ -27,12 +31,42 @@ header{
     z-index:1000;
 }
 
+
 h1{
     margin:0;
     font-size:30px;
     font-weight:200;
     letter-spacing:.08em;
 }
+
+
+
+/* Fixed email */
+
+.email{
+    position:fixed;
+    top:40px;
+    right:40px;
+    z-index:1000;
+}
+
+
+.email a,
+.email a:visited,
+.email a:hover,
+.email a:active{
+    color:#111;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:300;
+    letter-spacing:.03em;
+}
+
+
+.email a:hover{
+    opacity:.45;
+}
+
 
 
 /* Navigation */
@@ -42,6 +76,7 @@ h1{
     gap:70px;
     margin-bottom:100px;
 }
+
 
 .words a,
 .words a:visited,
@@ -54,9 +89,11 @@ h1{
     transition:.25s;
 }
 
+
 .words a:hover{
     opacity:.45;
 }
+
 
 
 /* Homepage Projects */
@@ -65,21 +102,25 @@ h1{
     margin-bottom:140px;
 }
 
+
 .project-preview img{
     width:100%;
     display:block;
     transition:opacity .3s ease;
 }
 
+
 .project-preview img:hover{
     opacity:.8;
 }
+
 
 .project-preview h2{
     font-size:24px;
     font-weight:300;
     margin-top:20px;
 }
+
 
 
 /* Responsive */
@@ -91,9 +132,17 @@ h1{
         top:20px;
     }
 
+
+    .email{
+        top:25px;
+        right:20px;
+    }
+
+
     .container{
         padding:120px 20px 40px;
     }
+
 
     .words{
         gap:30px;
@@ -101,12 +150,21 @@ h1{
         margin-bottom:60px;
     }
 
+
     h1{
         font-size:24px;
     }
+
+
+    .email a{
+        font-size:12px;
+    }
+
 
     .project-preview{
         margin-bottom:80px;
     }
 
 }
+```
+
