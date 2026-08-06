@@ -70,7 +70,7 @@ h1{
 
 .email{
 
-    margin-top:6px;
+    margin-top:5px;
 
 }
 
@@ -85,7 +85,7 @@ h1{
 
     text-decoration:none;
 
-    font-size:16px;
+    font-size:14px;
 
     font-weight:300;
 
@@ -175,11 +175,13 @@ h1{
     }
 
 
+
     h1{
 
         font-size:14px;
 
     }
+
 
 
     .email{
@@ -189,6 +191,7 @@ h1{
     }
 
 
+
     .email a{
 
         font-size:12px;
@@ -196,11 +199,13 @@ h1{
     }
 
 
+
     .container{
 
         padding:100px 20px 40px;
 
     }
+
 
 
     .words{
@@ -214,6 +219,7 @@ h1{
     }
 
 
+
     .project-preview{
 
         margin-bottom:80px;
@@ -222,3 +228,4 @@ h1{
 
 
 }
+
