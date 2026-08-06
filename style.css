@@ -32,7 +32,7 @@ body{
 
 
 
-/* Fixed title */
+/* Fixed title and email */
 
 header{
 
@@ -47,6 +47,7 @@ header{
     mix-blend-mode:difference;
 
 }
+
 
 
 h1{
@@ -65,21 +66,14 @@ h1{
 
 
 
-/* Fixed email */
+/* Email */
 
 .email{
 
-    position:fixed;
-
-    top:40px;
-
-    right:40px;
-
-    z-index:1000;
-
-    mix-blend-mode:difference;
+    margin-top:6px;
 
 }
+
 
 
 .email a,
@@ -190,11 +184,7 @@ h1{
 
     .email{
 
-        right:20px;
-
-        top:43px;
-
-        text-align:right;
+        margin-top:4px;
 
     }
 
