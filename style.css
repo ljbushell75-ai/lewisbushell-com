@@ -44,6 +44,8 @@ header{
 
     z-index:1000;
 
+    mix-blend-mode:difference;
+
 }
 
 
@@ -56,6 +58,8 @@ h1{
     font-weight:200;
 
     letter-spacing:.08em;
+
+    color:white;
 
 }
 
@@ -73,6 +77,8 @@ h1{
 
     z-index:1000;
 
+    mix-blend-mode:difference;
+
 }
 
 
@@ -81,7 +87,7 @@ h1{
 .email a:hover,
 .email a:active{
 
-    color:#111;
+    color:white;
 
     text-decoration:none;
 
@@ -96,7 +102,7 @@ h1{
 
 .email a:hover{
 
-    opacity:.45;
+    opacity:.7;
 
 }
 
