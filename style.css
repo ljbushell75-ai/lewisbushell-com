@@ -25,12 +25,11 @@ header {
     top: 40px;
     left: 40px;
     z-index: 1000;
-    mix-blend-mode: difference;
 }
 
 h1 {
     margin: 0;
-    color: white;
+    color: #111;
     font-size: 16px;
     font-weight: 300;
     letter-spacing: .08em;
@@ -44,7 +43,7 @@ h1 {
 .email a:visited,
 .email a:hover,
 .email a:active {
-    color: white;
+    color: #111;
     text-decoration: none;
     font-size: 14px;
     font-weight: 300;
@@ -53,7 +52,7 @@ h1 {
 }
 
 .email a:hover {
-    opacity: .7;
+    color: #83F783;
 }
 
 /* Information link */
@@ -138,19 +137,6 @@ h1 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 16px;
     }
-}
-
-/* Temporary information page */
-.about-page {
-    display: grid;
-    min-height: 100vh;
-    place-items: center;
-}
-
-.about-page p {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 300;
 }
 
 @media (max-width: 520px) {
