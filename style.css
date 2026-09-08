@@ -1,232 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap');
 
-
-*{
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
 
-
-body{
-
-    margin:0;
-
-    background:#f5f5f5;
-
-    color:#111;
-
-    font-family:"Manrope",sans-serif;
-
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+    background: #C4CFBC;
+    color: #111;
+    font-family: "Manrope", sans-serif;
 }
 
-
-
-
-.container{
-
-    max-width:1600px;
-
-    margin:auto;
-
-    padding:170px 40px 80px;
-
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 170px 40px 80px;
 }
-
-
 
 /* Fixed title and email */
-
-header{
-
-    position:fixed;
-
-    top:40px;
-
-    left:40px;
-
-    z-index:1000;
-
-    mix-blend-mode:difference;
-
+header {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 1000;
+    mix-blend-mode: difference;
 }
 
-
-
-h1{
-
-    margin:0;
-
-    font-size:16px;
-
-    font-weight:300;
-
-    letter-spacing:.08em;
-
-    color:white;
-
+h1 {
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: .08em;
 }
 
-
-
-/* Email */
-
-.email{
-
-    margin-top:5px;
-
+.email {
+    margin-top: 5px;
 }
-
-
 
 .email a,
 .email a:visited,
 .email a:hover,
-.email a:active{
-
-    color:white;
-
-    text-decoration:none;
-
-    font-size:14px;
-
-    font-weight:300;
-
-    letter-spacing:.08em;
-
-    text-transform:uppercase;
-
+.email a:active {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: .08em;
+    text-transform: uppercase;
 }
 
-
-.email a:hover{
-
-    opacity:.7;
-
+.email a:hover {
+    opacity: .7;
 }
-
-
 
 /* Navigation */
-
-.words{
-
-    display:flex;
-
-    gap:70px;
-
-    margin-bottom:100px;
-
+.words {
+    margin-bottom: 60px;
 }
 
-
-.words span{
-
-    color:#111;
-
-    font-size:18px;
-
-    font-weight:300;
-
+.words a,
+.words a:visited {
+    color: #111;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
 }
 
-
-
-/* Homepage Projects */
-
-.project-preview{
-
-    margin-bottom:140px;
-
+.words a:hover {
+    opacity: .65;
 }
 
-
-.project-preview img{
-
-    width:100%;
-
-    display:block;
-
-    transition:opacity .3s ease;
-
+/* Four-column homepage project grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
 }
 
-
-.project-preview img:hover{
-
-    opacity:.8;
-
+.project-preview {
+    display: block;
+    overflow: hidden;
 }
 
+.project-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity .3s ease;
+}
 
+.project-preview:hover img {
+    opacity: .8;
+}
 
 /* Responsive */
-
-@media(max-width:900px){
-
-
-    header{
-
-        left:auto;
-
-        right:20px;
-
-        top:20px;
-
-        text-align:right;
-
+@media (max-width: 900px) {
+    header {
+        top: 20px;
+        right: 20px;
+        left: auto;
+        text-align: right;
     }
 
-
-
-    h1{
-
-        font-size:14px;
-
+    h1 {
+        font-size: 14px;
     }
 
-
-
-    .email{
-
-        margin-top:4px;
-
+    .email {
+        margin-top: 4px;
     }
 
-
-
-    .email a{
-
-        font-size:12px;
-
+    .email a {
+        font-size: 12px;
     }
 
-
-
-    .container{
-
-        padding:100px 20px 40px;
-
+    .container {
+        padding: 100px 20px 40px;
     }
 
-
-
-    .words{
-
-        gap:30px;
-
-        flex-wrap:wrap;
-
-        margin-bottom:60px;
-
+    .words {
+        margin-bottom: 40px;
     }
 
-
-
-    .project-preview{
-
-        margin-bottom:80px;
-
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
     }
-
-
 }
 
+@media (max-width: 520px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
